@@ -1,0 +1,12 @@
+{
+  "name": "nmos_sio2",
+  "Vth0_V": 0.5512187322098148,
+  "pre_Vth_V": 0.5512187322101987,
+  "first_stress_delta_mV": 41.75437586245906,
+  "first_recovery_delta_mV": 0.28256242769749146,
+  "recovery_fraction": 0.006767253056979365,
+  "max_curve_difference_mV": 0.016295321157683285,
+  "base_rows": 1322,
+  "refined_rows": 3775,
+  "acceptance": "passed"
+}

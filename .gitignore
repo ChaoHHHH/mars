@@ -1,0 +1,18 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local Python environments and package metadata
+.venv/
+venv/
+*.egg-info/
+
+# Test coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Operating system metadata
+.DS_Store
+Thumbs.db

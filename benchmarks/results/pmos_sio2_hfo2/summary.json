@@ -1,0 +1,12 @@
+{
+  "name": "pmos_sio2_hfo2",
+  "Vth0_V": -0.4846791334044602,
+  "pre_Vth_V": -0.4846791335123063,
+  "first_stress_delta_mV": -14.445669439660287,
+  "first_recovery_delta_mV": 1.0784603878416512e-07,
+  "recovery_fraction": 7.465631083048049e-09,
+  "max_curve_difference_mV": 0.00257811318130248,
+  "base_rows": 1900,
+  "refined_rows": 3864,
+  "acceptance": "passed"
+}

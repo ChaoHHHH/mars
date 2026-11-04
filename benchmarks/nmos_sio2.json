@@ -1,0 +1,115 @@
+{
+  "name": "nmos_sio2",
+  "description": "Synthetic numerical regression; not a fitted material defect",
+  "T_K": 300.0,
+  "channel": {
+    "Nd": 0.0,
+    "Na": 1e+23,
+    "Evbm": -5.17,
+    "Eg0": 1.206,
+    "Eg1": -0.000273,
+    "ncoeff": [
+      0.1905,
+      0.9163
+    ],
+    "pcoeff": [
+      0.443587,
+      0.003609528,
+      0.0001173515,
+      1.263218e-06,
+      3.025581e-09,
+      0.004683382,
+      0.0002286895,
+      7.469271e-07,
+      1.727481e-09
+    ],
+    "Mv": 1,
+    "Mc": 6,
+    "eps_r": 11.7
+  },
+  "gate": {
+    "workfunction": 4.6
+  },
+  "layers": [
+    {
+      "eps_r": 3.9,
+      "tox": 3e-09
+    }
+  ],
+  "defect": {
+    "x_range": [
+      5e-10,
+      2.5e-09
+    ],
+    "Nt": 3e+24,
+    "Et": -4.6,
+    "Et_sigma": 0.12,
+    "Er12": 0.8,
+    "Er21": 0.8,
+    "Er12_sigma": 0.0,
+    "Er21_sigma": 0.0,
+    "Vc_vbm": 3e-06,
+    "Vc_cbm": 3e-06,
+    "decay_vbm": 1000000000.0,
+    "decay_cbm": 1000000000.0,
+    "type": "acceptor",
+    "dEt": 0.05,
+    "dEr": 0.1,
+    "dx": 2.5e-10,
+    "non_coverage": 0.0001,
+    "n_DFT_m3": 1e+27,
+    "Vc_gate": 0.0,
+    "decay_gate": 0.0,
+    "temperature_vbm": 0.0,
+    "temperature_cbm": 0.0,
+    "temperature_gate": 0.0
+  },
+  "pre_equilibrium_Vg": -2.0,
+  "phases": [
+    {
+      "kind": "stress",
+      "Vg": 2.0,
+      "duration_s": 1000.0
+    },
+    {
+      "kind": "recovery",
+      "Vg": -2.0,
+      "duration_s": 1000.0
+    },
+    {
+      "kind": "stress",
+      "Vg": 2.0,
+      "duration_s": 1000.0
+    },
+    {
+      "kind": "recovery",
+      "Vg": -2.0,
+      "duration_s": 1000.0
+    },
+    {
+      "kind": "stress",
+      "Vg": 2.0,
+      "duration_s": 1000.0
+    },
+    {
+      "kind": "recovery",
+      "Vg": -2.0,
+      "duration_s": 1000.0
+    }
+  ],
+  "solver": {
+    "dt_initial_s": 1e-13,
+    "dt_max_s": 10.0,
+    "electrostatics_recalc_threshold_V": 0.0001
+  },
+  "refined_solver": {
+    "dt_initial_s": 1e-13,
+    "dt_max_s": 2.5,
+    "electrostatics_recalc_threshold_V": 1e-05
+  },
+  "acceptance": {
+    "min_first_stress_magnitude_mV": 10.0,
+    "max_first_recovery_fraction": 0.25,
+    "max_curve_difference_mV": 0.5
+  }
+}

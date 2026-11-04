@@ -1,0 +1,105 @@
+{
+  "channel_parameters": {
+    "Nd": 1e+23,
+    "Na": 1e+16,
+    "Evbm": -5.17,
+    "Eg0": 1.206,
+    "Eg1": -0.000273,
+    "ncoeff": [
+      0.1905,
+      0.9163
+    ],
+    "pcoeff": [
+      0.443587,
+      0.003609528,
+      0.0001173515,
+      1.263218e-06,
+      3.025581e-09,
+      0.004683382,
+      0.0002286895,
+      7.469271e-07,
+      1.727481e-09
+    ],
+    "Mv": 1,
+    "Mc": 6,
+    "eps_r": 11.7
+  },
+  "insulating_layer_parameters": [
+    {
+      "eps_r": 3.9,
+      "tox": 1e-09
+    },
+    {
+      "eps_r": 25.0,
+      "tox": 2.1e-09
+    }
+  ],
+  "insulating_band_parameters": [
+    {
+      "name": "SiO2",
+      "electron_affinity_eV": 0.82,
+      "bandgap_eV": 9.0
+    },
+    {
+      "name": "HfO2",
+      "electron_affinity_eV": 2.272,
+      "bandgap_eV": 5.8
+    }
+  ],
+  "gate_parameter": {
+    "workfunction": 4.71
+  },
+  "simulation": {
+    "T": 300.0,
+    "equilibration_Vg": -0.6,
+    "initial_f": 0.0,
+    "period": 2000.0,
+    "n_cycles": 3,
+    "Vmax": -0.6,
+    "Vmin": -1.8
+  },
+  "solver": {
+    "dt_initial_s": 1e-13,
+    "dt_max_s": 10.0,
+    "electrostatics_recalc_threshold_V": 0.001
+  },
+  "output": {
+    "save_compact_history": true,
+    "occupation_energy_bins": 180,
+    "directory": "results",
+    "defect_labels": [
+      "Vo@HfO2"
+    ],
+    "save_pre_equilibrium_plot": true
+  },
+  "defects_parameters": [
+    {
+      "x_range": [
+        1e-09,
+        3.1e-09
+      ],
+      "Nt": 5.67e+25,
+      "n_DFT_m3": 3.3908171374106227e+27,
+      "Et": -4.9918165944,
+      "Et_sigma": 0.37,
+      "Er12": 0.81,
+      "Er12_sigma": 0.19,
+      "Er21": 0.61,
+      "Er21_sigma": 0.15,
+      "Vc_vbm": 0.07,
+      "decay_vbm": 5800000000.0,
+      "Vc_cbm": 0.07,
+      "decay_cbm": 5800000000.0,
+      "type": "donor",
+      "dEt": 0.05,
+      "dEr": 0.1,
+      "dx": 1e-10,
+      "non_coverage": 0.001,
+      "Vc_gate": 0.0,
+      "decay_gate": 0.0,
+      "temperature_vbm": 0.0,
+      "temperature_cbm": 0.0,
+      "temperature_gate": 0.0
+    }
+  ]
+}
